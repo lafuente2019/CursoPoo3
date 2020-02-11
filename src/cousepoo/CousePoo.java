@@ -15,6 +15,8 @@ public class CousePoo {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
         
+        System.out.println("Teste git");
+        
         System.out.println("Entre com os dados da conta:");
         System.out.print("Number: ");
         Integer number = sc.nextInt();
