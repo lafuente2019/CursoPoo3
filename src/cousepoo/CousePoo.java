@@ -5,7 +5,8 @@
  */
 package cousepoo;
 
-import entiites.Account;
+import entities.Account;
+import entities.BusinessAccount;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -14,6 +15,11 @@ public class CousePoo {
     public static void main(String[] args) {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
+        
+        Account acc = new Account (1001, "junior", 0.0);
+        BusinessAccount bacc = new BusinessAccount(500.0, 1002,"Lafuente", 0.0);
+        
+        //UPCASTING
         
         System.out.println("Teste git");
         
@@ -38,6 +44,9 @@ public class CousePoo {
         double deposito = sc.nextDouble();
         account.deposit(deposito);
         System.out.println(account);
+        
+        
+        
         sc.close();
     }
     
