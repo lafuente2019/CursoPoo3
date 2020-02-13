@@ -36,7 +36,7 @@ public class CousePoo {
            BusinessAccount acc5 = (BusinessAccount) acc3;
            acc5.loan(200.0);
         }
-        if(acc instanceof SavingsAccount){
+        if(acc3 instanceof SavingsAccount){
             SavingsAccount acc5 = (SavingsAccount) acc3;
             acc5.updateBalance();
             System.out.println("Update!");
