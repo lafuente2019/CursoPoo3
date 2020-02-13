@@ -65,7 +65,13 @@ public class CousePoo {
         account.deposit(deposito);
         System.out.println(account);
         
+        Account acc6 = new Account(1001, "valter", 1000.0);
+        acc6.withDraw(200.0);
+        System.out.println(acc6.getBalance());
         
+        Account acc7 =  new SavingsAccount(0.01, 1002, "juniorr", 1000.00);
+        acc7.withDraw(200.00);
+        System.out.println(acc7.getBalance());
         
         sc.close();
     }
