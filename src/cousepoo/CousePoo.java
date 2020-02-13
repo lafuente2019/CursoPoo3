@@ -21,15 +21,14 @@ public class CousePoo {
         
         //UPCASTING
         
-        System.out.println("Teste git");
         
         System.out.println("Entre com os dados da conta:");
         System.out.print("Number: ");
         Integer number = sc.nextInt();
         sc.nextLine();
-        System.out.println("Holder: ");
+        System.out.print("Holder: ");
         String holder = sc.nextLine();
-        System.out.println("Balance: ");
+        System.out.print("Balance: ");
         Double balance = sc.nextDouble();
         
         Account account = new Account(number, holder, balance);
