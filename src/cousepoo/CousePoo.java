@@ -40,7 +40,6 @@ public class CousePoo {
             SavingsAccount acc5 = (SavingsAccount) acc3;
             acc5.updateBalance();
             System.out.println("Update!");
-            
         }
         
         System.out.println("Entre com os dados da conta:");
@@ -72,6 +71,11 @@ public class CousePoo {
         Account acc7 =  new SavingsAccount(0.01, 1002, "juniorr", 1000.00);
         acc7.withDraw(200.00);
         System.out.println(acc7.getBalance());
+        
+          
+            Account acc8 = new BusinessAccount(500.0, 1009, "João",1000.0 );
+            acc8.withDraw(200.0);
+            System.out.println(acc8.getBalance());
         
         sc.close();
     }

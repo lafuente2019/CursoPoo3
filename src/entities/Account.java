@@ -32,8 +32,8 @@ public class Account {
     public void setBalance(Double balance) {
         this.balance = balance;
     }
-    public Double withDraw (Double amount){
-        return balance -= amount + 5.0;
+    public void withDraw (Double amount){
+        balance -= amount + 5.0;
     }
      public Double deposit (Double amount){
         return balance += amount;
