@@ -7,6 +7,7 @@ package cousepoo;
 
 import entities.Account;
 import entities.BusinessAccount;
+import entities.SavingsAccount;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -21,6 +22,26 @@ public class CousePoo {
         
         //UPCASTING
         
+        Account acc1 = bacc;
+        Account acc2 = new BusinessAccount(500.0,1003, "Valter", 0.0);
+        Account acc3 = new SavingsAccount(500.00, 1004, "jose", 0.0);
+        
+        // DOWNCASTING
+        
+        BusinessAccount acc4 = (BusinessAccount)acc2;
+        acc4.loan(100.00);
+        
+        // BusinessAccount acc5 = (BusinessAccount) acc3;
+        if(acc3 instanceof BusinessAccount){
+           BusinessAccount acc5 = (BusinessAccount) acc3;
+           acc5.loan(200.0);
+        }
+        if(acc instanceof SavingsAccount){
+            SavingsAccount acc5 = (SavingsAccount) acc3;
+            acc5.updateBalance();
+            System.out.println("Update!");
+            
+        }
         
         System.out.println("Entre com os dados da conta:");
         System.out.print("Number: ");

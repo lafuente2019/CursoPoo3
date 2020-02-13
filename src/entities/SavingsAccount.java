@@ -5,6 +5,7 @@ public class SavingsAccount extends Account {
     private Double interestRate;
     
     public SavingsAccount(){
+        super();
         
     }
 
